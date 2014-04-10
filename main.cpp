@@ -41,6 +41,8 @@ int main(int argc, char** argv) {
     for (int i = 0; i < nseed; i++, seed++, res += dres) {
 #ifdef AMAZON
         string prog = "/home/ubuntu/dynamical_gutzwiller_hartmann_two_site_runner";
+#elif defined(FSTSERVER)
+        string prog = "C:/Users/Abuenameh/Documents/NetBeansProjects/Dynamical Gutzwiller Hartmann Two Site Runner/dist/Release/MinGW_TDM-Windows/dynamical_gutzwiller_hartmann_two_site_runner.exe";
 #else
         string prog = "/Users/Abuenameh/NetBeansProjects/Dynamical Gutzwiller Hartmann Two Site Runner/dist/Release/GNU-MacOSX/dynamical_gutzwiller_hartmann_two_site_runner";
 #endif
